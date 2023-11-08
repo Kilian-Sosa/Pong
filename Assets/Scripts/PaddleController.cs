@@ -14,8 +14,4 @@ public class PaddleController : MonoBehaviour {
         else if (motion < 0) GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
         else GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
-
-    private void FixedUpdate() {
-        
-    }
 }

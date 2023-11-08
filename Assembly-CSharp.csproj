@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallMotion.cs" />
     <Compile Include="Assets\Scripts\PaddleController.cs" />
+    <Compile Include="Assets\Scripts\CPUController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
