@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 64631609}
   - component: {fileID: 64631608}
   m_Layer: 0
-  m_Name: ball
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 786478341}
   - component: {fileID: 786478340}
   m_Layer: 0
-  m_Name: bound1
+  m_Name: BottomLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 974345425}
   - component: {fileID: 974345424}
   m_Layer: 0
-  m_Name: bound4
+  m_Name: BarrierLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,8 +627,8 @@ Transform:
   m_GameObject: {fileID: 974345423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -8.18, y: 0.01, z: 0}
-  m_LocalScale: {x: -9.1, y: 0.3, z: 1}
+  m_LocalPosition: {x: -8.18, y: 0.00487, z: 0}
+  m_LocalScale: {x: -9.110283, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 1385537575}
   - component: {fileID: 1385537574}
   m_Layer: 0
-  m_Name: bound2
+  m_Name: TopLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 1713802260}
   - component: {fileID: 1713802259}
   m_Layer: 0
-  m_Name: middleLine
+  m_Name: MiddleLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 1753383269}
   - component: {fileID: 1753383268}
   m_Layer: 0
-  m_Name: leftPaddle
+  m_Name: LeftPaddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 1753680261}
   - component: {fileID: 1753680260}
   m_Layer: 0
-  m_Name: bound3
+  m_Name: BarrierRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1101,8 +1101,8 @@ Transform:
   m_GameObject: {fileID: 1753680259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 8.19, y: 0.01, z: 0}
-  m_LocalScale: {x: -9.1, y: 0.3, z: 1}
+  m_LocalPosition: {x: 8.19, y: 0.006, z: 0}
+  m_LocalScale: {x: -9.108191, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 1789231250}
   - component: {fileID: 1789231249}
   m_Layer: 0
-  m_Name: rightPaddle
+  m_Name: RightPaddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
