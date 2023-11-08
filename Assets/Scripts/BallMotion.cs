@@ -3,10 +3,22 @@ using UnityEngine;
 public class BallMovement : MonoBehaviour {
 
     [SerializeField] float speed;
+    [SerializeField] GameObject leftPaddle, rightPaddle;
 
     void Start() {
-        float direction = Random.Range(0, 4);
-        switch(direction) {
+        Spawn();
+    }
+
+    void Update() {
+        if (transform.position.x > rightPaddle.transform.position.x) 
+            Spawn();
+        else if (transform.position.x < leftPaddle.transform.position.x) 
+            Spawn();
+    }
+
+    private void Spawn() {
+        transform.position = Vector2.zero;
+        switch (Random.Range(0, 4)) {
             case 0:
                 GetComponent<Rigidbody2D>().velocity = new Vector2(1, 1) * speed;
                 break;
@@ -20,9 +32,5 @@ public class BallMovement : MonoBehaviour {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-1, -1) * speed;
                 break;
         }
-    }
-
-    void Update() {
-        
     }
 }
