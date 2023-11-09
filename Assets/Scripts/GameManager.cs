@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     [SerializeField] float ballSpeed;
-    [SerializeField] GameObject ball, leftPaddle, rightPaddle;
+    [SerializeField] GameObject ball, leftBarrier, rightBarrier;
     [SerializeField] int score1, score2;
 
     void Start() {
@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update() {
-        if (ball.transform.position.x > rightPaddle.transform.position.x) {
+        if (ball.transform.position.x > rightBarrier.transform.position.x) {
             score1++;
             GameObject.Find("Score1").GetComponent<TMP_Text>().text = score1.ToString();
             SpawnBall();
-        } else if (ball.transform.position.x < leftPaddle.transform.position.x) {
+        } else if (ball.transform.position.x < leftBarrier.transform.position.x) {
             score2++;
             GameObject.Find("Score2").GetComponent<TMP_Text>().text = score2.ToString();
             SpawnBall();
