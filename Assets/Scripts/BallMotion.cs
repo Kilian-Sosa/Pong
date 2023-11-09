@@ -1,19 +1,27 @@
+using TMPro;
 using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
 
     [SerializeField] float speed;
     [SerializeField] GameObject leftPaddle, rightPaddle;
+    [SerializeField] int score1, score2;
 
     void Start() {
         Spawn();
     }
 
     void Update() {
-        if (transform.position.x > rightPaddle.transform.position.x) 
+        if (transform.position.x > rightPaddle.transform.position.x) {
+            score1++;
+            GameObject.Find("Score1").GetComponent<TMP_Text>().text = score1.ToString();
             Spawn();
-        else if (transform.position.x < leftPaddle.transform.position.x) 
+        } 
+        else if (transform.position.x < leftPaddle.transform.position.x) {
+            score2++;
+            GameObject.Find("Score2").GetComponent<TMP_Text>().text = score2.ToString();
             Spawn();
+        } 
     }
 
     private void Spawn() {
