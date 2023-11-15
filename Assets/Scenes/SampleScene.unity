@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 64631610}
   - component: {fileID: 64631608}
   - component: {fileID: 64631609}
+  - component: {fileID: 64631612}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -281,6 +282,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &64631612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64631607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4be1b0c6ca8d2640a91687031834a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +401,7 @@ GameObject:
   - component: {fileID: 663015335}
   m_Layer: 0
   m_Name: RightPaddle
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,7 +747,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.14901961}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1190,7 +1203,7 @@ GameObject:
   - component: {fileID: 1753383272}
   m_Layer: 0
   m_Name: LeftPaddle
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1347,7 +1360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 64631607}
-  speed: 10
+  speed: 20
 --- !u!1 &1753680259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1420,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1718,7 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d7cf0bb1fc6494590b895c1907e97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 10
+  ballSpeed: 5
   ball: {fileID: 64631607}
   leftBarrier: {fileID: 974345423}
   rightBarrier: {fileID: 1753680259}

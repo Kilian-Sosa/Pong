@@ -15,9 +15,9 @@ public class PaddleController : MonoBehaviour {
         else GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-            RotatePaddle(1f);
-        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             RotatePaddle(-1f);
+        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            RotatePaddle(1f); 
         else if (GetComponent<Rigidbody2D>().rotation > 0 && GetComponent<Rigidbody2D>().rotation % 360 < 10 || 
                 GetComponent<Rigidbody2D>().rotation < 0 && GetComponent<Rigidbody2D>().rotation % 360 > -10) {
             GetComponent<Transform>().rotation = Quaternion.identity;
