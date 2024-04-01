@@ -14,7 +14,7 @@ public class Qlearning : MonoBehaviour {
     double[,,,] QTable; // Paddle YPos, Ball XPos, Ball YPos, Actions
     float learningRate = 0.1f;
     float discountFactor = 0.1f;
-    float explorationRate = 0.4f;
+    float explorationRate = 0.1f;
     public float paddleVelocity;
     Vector2 ballVelocity;
 
@@ -33,7 +33,7 @@ public class Qlearning : MonoBehaviour {
     public bool behindPaddle;
 
     void Start() {
-        //Time.timeScale = 30;
+        Time.timeScale = 30;
         ball = GameObject.Find("Ball");
         QTable = new double[paddlePositions, ballPositionsX, ballPositionsY, actionsNum];
         paddle = transform;
@@ -134,7 +134,7 @@ public class Qlearning : MonoBehaviour {
 
         double newValue = actualQValue + learningRate * (futureMaxQValue - actualQValue);
         QTable[oldState[0], oldState[1], oldState[2], actionTaken] = newValue;
-        //print($"Updated QTable value at [{oldState[0]}, {oldState[1]}, {oldState[2]}, {actionTaken}]: {newValue}");
+        print($"Updated QTable value at [{oldState[0]}, {oldState[1]}, {oldState[2]}, {actionTaken}]: {actualQValue} - {newValue}");
     }
 
     void LoadQTableFromFile() {
@@ -146,19 +146,20 @@ public class Qlearning : MonoBehaviour {
                     for (int j = 0; j < ballPositionsX; j++)
                         for (int k = 0; k < ballPositionsY; k++) {
                             string line = reader.ReadLine();
-                               if (!string.IsNullOrEmpty(line)) {
-                                    string[] values = line.Split(',');
-                                    for (int l = 0; l < actionsNum; l++) {
-                                        if (float.TryParse(values[l], out float value)) {
-                                            QTable[i, j, k, l] = value;
-                                        } else {
-                                            Debug.LogWarning("Invalid value in QTable file.");
-                                        }
+                            if (!string.IsNullOrEmpty(line)) {
+                                string[] values = line.Split(',');
+                                for (int l = 0; l < actionsNum; l++) {
+                                    string formattedValue = values[l].Replace('.', ',');
+                                    if (float.TryParse(formattedValue, out float value)) {
+                                        QTable[i, j, k, l] = value;
+                                    } else {
+                                        Debug.LogWarning("Invalid value in QTable file.");
                                     }
-                               } else {
-                                    Debug.LogWarning("Empty line found in QTable file.");
-                                    break;
-                               }
+                                }
+                            } else {
+                                Debug.LogWarning("Empty line found in QTable file.");
+                                break;
+                            }
                         }
             }
             Debug.Log("QTable loaded from: " + filePath);
