@@ -5,9 +5,11 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] float ballSpeed;
     [SerializeField] GameObject ball, leftBarrier, rightBarrier, qPaddle;
-    [SerializeField] int score1, score2;
+    public int score1, score2;
+    public static GameManager instance;
 
     void Start() {
+        instance = this;
         SpawnBall();
     }
 

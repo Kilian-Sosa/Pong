@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 64631610}
   - component: {fileID: 64631608}
   - component: {fileID: 64631609}
+  - component: {fileID: 64631612}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -281,6 +282,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &64631612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64631607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4be1b0c6ca8d2640a91687031834a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &663015335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47de99f8f96607742b9e08edefdab8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleVelocity: 20
+  paddleVelocity: 30
   scoreText: {fileID: 1695118112}
   behindPaddle: 0
 --- !u!1 &1753494050
@@ -1599,7 +1612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1779642507
 BoxCollider2D:
   m_ObjectHideFlags: 0

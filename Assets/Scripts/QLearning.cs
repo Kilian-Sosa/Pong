@@ -28,12 +28,11 @@ public class Qlearning : MonoBehaviour {
     float minY = 2.5f;
     float maxY = 9f;
     public TextMeshProUGUI scoreText;
-    int score = 0;
 
     public bool behindPaddle;
 
     void Start() {
-        Time.timeScale = 30;
+        //Time.timeScale = 30;
         ball = GameObject.Find("Ball");
         QTable = new double[paddlePositions, ballPositionsX, ballPositionsY, actionsNum];
         paddle = transform;
@@ -66,7 +65,7 @@ public class Qlearning : MonoBehaviour {
     }
 
     int EpsilonGreedy(int[] state) {
-        if (score != 0 && score % 100 == 0) {
+        if (GameManager.instance.score1 != 0 && GameManager.instance.score1 % 100 == 0) {
             explorationRate *= explorationRate;
             print(explorationRate);
         }
@@ -117,7 +116,7 @@ public class Qlearning : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ball")) {
             UpdateQTable(oldState, action, state, 100f);
-            scoreText.text = $"{++score}";
+            scoreText.text = $"{++GameManager.instance.score1}";
         }
     }
 
