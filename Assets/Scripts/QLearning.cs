@@ -10,11 +10,12 @@ public class Qlearning : MonoBehaviour {
     int ballPositionsX = 17;
     int ballPositionsY = 8;
     int actionsNum = 3;
+    double[,,,] QTable; 
 
-    double[,,,] QTable; // Paddle YPos, Ball XPos, Ball YPos, Actions
-    float learningRate = 0.1f;
+    float learningRate = 0.5f;
     float discountFactor = 0.1f;
     float explorationRate = 0.1f;
+
     public float paddleVelocity;
     Vector2 ballVelocity;
 

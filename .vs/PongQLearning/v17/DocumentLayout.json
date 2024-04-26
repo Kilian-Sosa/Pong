@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Kilian\\PongQLearning\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|C:\\Users\\Kilian\\PongQLearning\\assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|C:\\Users\\Kilian\\PongQLearning\\assets\\scripts\\qlearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\qlearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|c:\\users\\kilian\\pongqlearning\\assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,11 +15,7 @@
       "RelativeMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|c:\\users\\kilian\\pongqlearning\\assets\\scripts\\qlearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\qlearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|c:\\users\\kilian\\pongqlearning\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|C:\\Users\\Kilian\\PongQLearning\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{868845AB-1126-3DDE-9586-D0035460D482}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -38,25 +38,24 @@
               "RelativeToolTip": "Assets\\Scripts\\PaddleController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T18:46:42.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T18:46:42.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "QLearning.cs",
               "DocumentMoniker": "C:\\Users\\Kilian\\PongQLearning\\Assets\\Scripts\\QLearning.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\QLearning.cs",
               "ToolTip": "C:\\Users\\Kilian\\PongQLearning\\Assets\\Scripts\\QLearning.cs",
               "RelativeToolTip": "Assets\\Scripts\\QLearning.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAcwHYAAAA9AAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAYwFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T17:03:09.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BallController.cs",
               "DocumentMoniker": "C:\\Users\\Kilian\\PongQLearning\\Assets\\Scripts\\BallController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BallController.cs",
@@ -69,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Kilian\\PongQLearning\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -77,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwB0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T20:29:34.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T20:29:34.82Z"
             }
           ]
         }
